@@ -1,0 +1,26 @@
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow1);
+  scale: 1.5;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--motion-duration-medium-1) var(--motion-easing-legacy);
+  z-index: 16;
+}
+.scroll-to-top.active {
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+  bottom: 85px;
+  transition: var(--motion-duration-medium-1);
+}
+.scroll-to-top .scroll-top-btn svg {
+  color: #ffffff;
+}
+@media only screen and (min-width: 992px) {
+  .scroll-to-top.active {
+    bottom: 15px;
+  }
+}

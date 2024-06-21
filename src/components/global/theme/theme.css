@@ -1,0 +1,30 @@
+.theme-settings {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: var(--section-color);
+  box-shadow: var(--box-shadow1);
+  border-radius: var(--radius-full);
+}
+[data-theme='light'] .theme-settings .dark-icon,
+[data-theme='dark'] .theme-settings .light-icon {
+  display: none;
+}
+.theme-settings .btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--outline);
+}
+.theme-settings :where(.light-icon, .dark-icon) {
+  width: 100%;
+  height: 100%;
+  transition: var(--motion-duration-short-1);
+}
+@media only screen and (min-width: 992px) {
+  .theme-settings .btn {
+    width: 46px;
+    height: 46px;
+  }
+}

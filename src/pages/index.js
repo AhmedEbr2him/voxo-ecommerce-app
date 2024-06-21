@@ -1,0 +1,9 @@
+export { default as Home } from './home/HomePage';
+export { default as Products } from './products/ProductsPage';
+export { default as ProductDetail } from './products/ProductDetail';
+export { default as Blog } from './blog/BlogPage';
+export { default as About } from './about/AboutPage';
+export { default as Contact } from './contact/ContactPage';
+export { default as Checkout } from './checkout/CheckoutPage';
+export { default as OrderTracking } from './order/OrderTrackingPage';
+export { default as Wishlist } from './wishlist/WishlistPage';
